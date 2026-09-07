@@ -305,7 +305,7 @@ def main() -> None:
 
     (OUT / "README.md").write_text(
         "# Candidate public reproducibility package\n\n"
-        "This local package is a pre-publication candidate. It has not been uploaded or assigned a DOI. "
+        "This local package is a pre-publication candidate prepared for a GitHub Release. "
         "Images were copied without recompression while EXIF/XMP/IPTC/comment JPEG metadata segments were removed. "
         "See `docs/PREPUBLICATION_BLOCKERS.md` before public release.\n",
         encoding="utf-8",
@@ -318,7 +318,7 @@ def main() -> None:
         "- Match the final 185 pruning samples to portable manual cut-line source annotations and rebase their image paths.\n"
         "- Manually inspect sanitized images for faces, signage, vehicle plates, and location-revealing content.\n"
         "- Audit third-party pretrained-weight licences before distributing fine-tuned checkpoints.\n"
-        "- Create GitHub and Zenodo releases, obtain a DOI, then update the manuscript Data Availability statement.\n",
+        "- Verify the GitHub release assets and complete the final public-release authorization before updating the manuscript Data Availability statement.\n",
         encoding="utf-8",
     )
     (OUT / "environment" / "REQUIREMENTS_TO_FREEZE.md").write_text(
@@ -340,7 +340,7 @@ def main() -> None:
         "model_checkpoints": len(checkpoint_manifest),
         "manual_pruning_source_annotation_subset": "pending matched portable-annotation export",
         "tape_split": "must be regenerated and independently audited from seed-42 algorithm before public release",
-        "manuscript_data_availability": "not updated; DOI does not yet exist",
+        "manuscript_data_availability": "not updated; GitHub release remains a draft",
     }
     write_json(OUT / "preflight_report.json", report)
     print(json.dumps(report, ensure_ascii=False, indent=2))

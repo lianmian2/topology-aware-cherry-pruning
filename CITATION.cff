@@ -1,5 +1,5 @@
 cff-version: 1.2.0
-message: "If you use this code, please cite the associated manuscript and the archived Zenodo data/model record."
+message: "If you use this code, please cite the associated manuscript and the corresponding GitHub Release."
 title: "Topology-aware structural representation from low-cost RGB images for sweet-cherry pruning candidate ranking"
 authors:
   - family-names: Xu

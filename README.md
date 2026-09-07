@@ -4,7 +4,7 @@ This repository contains the code accompanying a manuscript on RGB-based sweet-c
 
 ## Repository scope
 
-This is a code-only repository. It deliberately excludes RGB images, annotations, derived features, experiment outputs, and trained checkpoints. Those research artefacts will be archived separately on Zenodo under CC BY 4.0; the DOI will be added here after publication.
+This is a code-only repository. It deliberately excludes RGB images, annotations, derived features, experiment outputs, and trained checkpoints. Those research artefacts are distributed under CC BY 4.0 through the corresponding [v1.0 GitHub Release](https://github.com/lianmian2/topology-aware-cherry-pruning/releases/tag/v1.0).
 
 ## Layout
 
@@ -19,6 +19,6 @@ This is a code-only repository. It deliberately excludes RGB images, annotations
 
 ## Installation and use
 
-Create a clean Python environment and install `environment/requirements_core_pipeline.txt`. CUDA-compatible PyTorch wheels should be selected for the available GPU and CUDA runtime. Use the public Zenodo record, once released, for data paths, split manifests, model checkpoints, and supplied out-of-fold predictions.
+Create a clean Python environment and install `environment/requirements_core_pipeline.txt`. CUDA-compatible PyTorch wheels should be selected for the available GPU and CUDA runtime. Download the `v1.0` Release assets for data paths, split manifests, model checkpoints, and supplied out-of-fold predictions.
 
-The repository is released under the MIT License. Please cite the associated manuscript and the Zenodo data/model record when using this code.
+The repository is released under the MIT License. Please cite the associated manuscript and the corresponding GitHub Release when using this code.
