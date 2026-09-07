@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "purpose": "pruning_gnn_atomic_segment_pilot",
+  "created_at": "2026-07-26",
+  "defaults": {
+    "roi_weight": "03_models/roi/epoch_12.pth",
+    "roi_sha256": "4cd75cef05988b9aaaf615db064befb65e06e1f4f4c296f4404f4f3bab7c5ffb",
+    "branch_weight": "03_models/branch_segmentation/best_dice_model.pth",
+    "branch_sha256": "bbb821d11fb9213bc3089abec9537c3be963fdfdc43e1b3cad1f3226c103642d",
+    "bud_weight": "03_models/compag/bud_baseline_deloc_patch/best.pth",
+    "bud_sha256": "55e0ca677f71da27e8386fb55c4ede583da67ab13a5470eab7caf09f7529a103",
+    "bud_score_threshold": 0.5,
+    "mask_clip": {
+      "max_exit_distance": 3.0,
+      "max_gap": 20.0,
+      "snap_radius": 5
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "tree_003_before_view_01",
+      "image_path": "01_data/01_raw/final_data/tree_003/before/view_01.jpg",
+      "category": "dense_buds_and_cut_mapping",
+      "selection_evidence": "manual cut-line truth; dense-bud stress case"
+    },
+    {
+      "sample_id": "tree_130_before_view_04",
+      "image_path": "01_data/01_raw/final_data/tree_130/before/view_04.jpg",
+      "category": "clip_heavy_and_gt_pair",
+      "selection_evidence": "manual cut-line truth; GT skeleton overlap; clip-heavy frozen regression case"
+    },
+    {
+      "sample_id": "tree_012_before_view_01",
+      "image_path": "01_data/01_raw/final_data/tree_012/before/view_01.jpg",
+      "category": "paired_core_view_01",
+      "selection_evidence": "manual cut-line truth and GT skeleton overlap"
+    },
+    {
+      "sample_id": "tree_012_before_view_04",
+      "image_path": "01_data/01_raw/final_data/tree_012/before/view_04.jpg",
+      "category": "paired_core_view_04",
+      "selection_evidence": "manual cut-line truth and GT skeleton overlap"
+    },
+    {
+      "sample_id": "tree_056_before_view_01",
+      "image_path": "01_data/01_raw/final_data/tree_056/before/view_01.jpg",
+      "category": "paired_core_view_01",
+      "selection_evidence": "manual cut-line truth and GT skeleton overlap"
+    },
+    {
+      "sample_id": "tree_056_before_view_04",
+      "image_path": "01_data/01_raw/final_data/tree_056/before/view_04.jpg",
+      "category": "paired_core_view_04",
+      "selection_evidence": "manual cut-line truth and GT skeleton overlap"
+    }
+  ]
+}

@@ -1,0 +1,56 @@
+{
+  "schema_version": "1.0",
+  "frozen_at": "2026-07-17",
+  "defaults": {
+    "roi_weight": "03_models/roi/epoch_12.pth",
+    "roi_sha256": "4cd75cef05988b9aaaf615db064befb65e06e1f4f4c296f4404f4f3bab7c5ffb",
+    "branch_weight": "03_models/branch_segmentation/best_dice_model.pth",
+    "branch_sha256": "bbb821d11fb9213bc3089abec9537c3be963fdfdc43e1b3cad1f3226c103642d",
+    "bud_weight": "03_models/compag/bud_baseline_deloc_patch/best.pth",
+    "bud_sha256": "55e0ca677f71da27e8386fb55c4ede583da67ab13a5470eab7caf09f7529a103",
+    "bud_score_threshold": 0.5,
+    "mask_clip": {
+      "max_exit_distance": 3.0,
+      "max_gap": 20.0,
+      "snap_radius": 5
+    }
+  },
+  "samples": [
+    {
+      "sample_id": "tree_015_before_view_03",
+      "image_path": "01_data/01_raw/final_data/tree_015/before/view_03.jpg",
+      "category": "topology_success",
+      "selection_evidence": "branch_f1_tol24=0.932 in frozen 100-image topology evaluation"
+    },
+    {
+      "sample_id": "tree_042_before_view_06",
+      "image_path": "01_data/01_raw/final_data/tree_042/before/view_06.jpg",
+      "category": "gap_bridge_stress",
+      "selection_evidence": "26 gap bridges in frozen 100-image topology evaluation"
+    },
+    {
+      "sample_id": "tree_063_before_view_05",
+      "image_path": "01_data/01_raw/final_data/tree_063/before/view_05.jpg",
+      "category": "multi_component_trunk",
+      "selection_evidence": "three trunk components in frozen 100-image topology evaluation"
+    },
+    {
+      "sample_id": "tree_050_before_view_01",
+      "image_path": "01_data/01_raw/final_data/tree_050/before/view_01.jpg",
+      "category": "low_routing_high_tolerance",
+      "selection_evidence": "routing success 0.571 and branch_f1_tol24 0.934"
+    },
+    {
+      "sample_id": "tree_130_before_view_04",
+      "image_path": "01_data/01_raw/final_data/tree_130/before/view_04.jpg",
+      "category": "clip_heavy",
+      "selection_evidence": "five removed edges in frozen 100-image topology evaluation"
+    },
+    {
+      "sample_id": "tree_003_before_view_01",
+      "image_path": "01_data/01_raw/final_data/tree_003/before/view_01.jpg",
+      "category": "dense_buds_and_roi_edge_candidate",
+      "selection_evidence": "150 manual buds; ROI touches bottom, left and top in boundary audit template; truncation status remains unverified"
+    }
+  ]
+}

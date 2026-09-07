@@ -1,0 +1,14 @@
+# Tape_Segmentation_v2 最小运行依赖
+# 说明：
+# 1. 仅列出当前 data_processing.py / train.py / visualize.py 的第三方库。
+# 2. 标准库（json、os、pathlib、shutil、random、re 等）不需要安装。
+# 3. 为兼容部分 AutoDL 环境中常见的 Python 3.8 和较旧镜像，避免使用仅支持更高 Python 版本的过新包版本。
+
+numpy==1.24.4
+opencv-python==4.10.0.84
+pillow==10.4.0
+tqdm==4.65.2
+torch==2.0.1+cu118
+torchvision==0.15.2+cu118
+torchaudio==2.0.2+cu118
+segmentation-models-pytorch==0.3.3

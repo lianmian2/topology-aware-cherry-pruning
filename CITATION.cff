@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this code, please cite the associated manuscript and the archived Zenodo data/model record."
+title: "Topology-aware structural representation from low-cost RGB images for sweet-cherry pruning candidate ranking"
+authors:
+  - family-names: Xu
+    given-names: Minglang
+  - family-names: Mao
+    given-names: Yiming
+  - family-names: Tang
+    given-names: Cunyou
+  - family-names: Wu
+    given-names: Bingzheng
+  - family-names: Zhao
+    given-names: Zhenyu
+  - family-names: Ma
+    given-names: Yunfei
+repository-code: "https://github.com/lianmian2/topology-aware-cherry-pruning"
+license: MIT

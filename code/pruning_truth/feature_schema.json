@@ -1,0 +1,22 @@
+{
+  "schema_version": "1.0",
+  "required_columns": ["tree_id", "view", "branch_id", "label", "representation", "rule_prediction"],
+  "label_values": ["pruned", "retained", "uncertain"],
+  "representation_values": ["gt", "pred"],
+  "feature_groups": {
+    "geometry": ["branch_length_norm", "parent_angle_deg", "trunk_position_norm", "relative_height"],
+    "topology": ["topology_depth", "parent_degree", "child_count", "neighbor_degree_mean"],
+    "bud": ["bud_count", "bud_density", "flower_bud_ratio"],
+    "direction": ["direction_score"],
+    "context": ["local_crowding"],
+    "multiview": ["multiview_support"]
+  },
+  "ablations": {
+    "full": [],
+    "no_bud": ["bud"],
+    "no_topology": ["topology"],
+    "no_direction": ["direction"],
+    "no_multiview": ["multiview"]
+  }
+}
+

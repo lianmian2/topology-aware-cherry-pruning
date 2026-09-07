@@ -1,0 +1,15 @@
+torch==2.1.0+cu118
+torchvision==0.16.0+cu118
+torchaudio==2.1.0+cu118
+numpy==1.26.4
+opencv-python==4.8.1.78
+pandas==2.3.3
+scikit-learn==1.6.1
+networkx==3.2.1
+scipy==1.13.1
+joblib==1.5.3
+PyYAML==6.0.3
+timm==1.0.26
+mmcv==2.1.0
+mmdet==3.3.0
+pillow==10.4.0
